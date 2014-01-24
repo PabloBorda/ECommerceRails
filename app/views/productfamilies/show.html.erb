@@ -1,0 +1,14 @@
+<br/><%= link_to "Backend home", :controller=>"backend", :action => "get_me_in" %><br/>
+<p>
+  <b>Id:</b>
+  <%=h @productfamily.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @productfamily.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_productfamily_path(@productfamily) %> |
+<%= link_to 'Back', productfamilies_path %>

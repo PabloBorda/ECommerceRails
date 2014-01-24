@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<div id="productDescription">
+
+
+
+<link rel="stylesheet" href="/stylesheets/galleria.css" type="text/css" media="screen">
+
+
+
+<table border="0">
+  <tr>
+<td valign="top" style="width:350px">
+  <div align="right"><input type="button" id="addToCartBtn" value="Add to shopping cart"/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+  <h1><%=@selectedProduct.name%></h1>
+  <font face="Bauhaus"><%=@selectedProduct.description%></font><br/>
+  <br/><br/><br/>
+</td>
+    <td valign="top" align="right" style="position:relative">
+<script>
+ function submitAddToShoppingCart(){
+
+    var opt2 = {target:"#login_or_signup"};
+
+    $("#productid").val(<%=@selectedProduct.id%>);
+
+
+    $("#shopping_cart").ajaxForm();
+    $("#shopping_cart").submit(function (){
+      $(this).ajaxSubmit(opt2);
+      return false;
+    });
+
+
+    <%  if session[:user] == nil %>
+       $("#shopping_cart").trigger("submit");
+       $("#login_or_signup").dialog({
+            modal: false,
+            position: ["center","center"],
+            overlay: {
+              opacity: 0.5,
+              background: "black"
+            }
+           });
+       <%else%>
+         $("#shopping_cart").trigger("submit");
+       <%end%>
+
+  }
+
+
+
+    $(document).ready(function($) {
+
+      var showing = false;
+      var context;
+
+      $("#orderFrame").hide();
+
+
+      $("#addToCartBtn").click(function(){
+        if (showing == false){
+          $("#orderFrame").show();
+          context = $("#orderFrame").dialog({
+             modal: false,
+             width: 400,
+             height:300,
+             overlay: {
+               opacity: 0.5,
+               background: "black"
+             }
+          });
+        }
+      });
+
+      $('.gallery_demo_unstyled').addClass('gallery_demo');
+      $('ul.gallery_demo').galleria({
+
+    insert    : '#main_image',
+    onImage   : function(image,caption,thumb) { // let's add some image effects for demonstration purposes
+
+				// fade in the image & caption
+				if(! ($.browser.mozilla && navigator.appVersion.indexOf("Win")!=-1) ) { // FF/Win fades large images terribly slow
+					image.css('display','none').fadeIn(1000);
+				}
+				caption.css('display','none').fadeIn(1000);
+
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+
+				// fade out inactive thumbnail
+				_li.siblings().children('img.selected').fadeTo(500,0.3);
+
+				// fade in active thumbnail
+				thumb.fadeTo('fast',1).addClass('selected');
+
+				// add a title for the clickable image
+				image.attr('title','Next image >>');
+
+
+			},
+			onThumb : function(thumb) { // thumbnail effects goes here
+
+				// fetch the thumbnail container
+				var _li = thumb.parents('li');
+
+				// if thumbnail is active, fade all the way.
+				var _fadeTo = _li.is('.active') ? '1' : '0.3';
+
+				// fade in the thumbnail when finnished loading
+				thumb.css({display:'none',opacity:_fadeTo}).fadeIn(1500);
+
+				// hover effects
+				thumb.hover(
+					function() { thumb.fadeTo('fast',1); },
+					function() { _li.not('.active').children('img').fadeTo('fast',0.3); } // don't fade out if the parent is active
+				)
+            }});
+
+
+
+            });
+</script>
+
+<table border="0">
+  <tr>
+
+    <td valign="top">
+      <div id="main_image">
+
+      </div>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+
+    <td>
+      <br/><br/><br/><br/>
+      <ul class="gallery_demo_unstyled">
+        <% first = true %>
+        <% for p in @selectedProduct.pictures %>
+           <%if (!first)%>
+             <li><img src="<%= p.url %>" width="100" height="100"/></li>
+           <%else%>
+             <li class="active"><img src="<%= p.url %>" width="100" height="100"/></li>
+           <% first = false %>
+           <%end%>
+        <% end %>
+     </ul><br/><br/><br/>
+      <div align="center">
+        <!--<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">&laquo; previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next &raquo;</a></p>-->
+      </div>
+
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <div align="right">
+        Price : <%=@selectedProduct.price%> U$S
+      </div>
+    </td>
+
+
+  </tr>
+
+
+</table>
+
+
+<div id="orderFrame" class="flora">
+<form id="shopping_cart" action="/fifty_one_inc/add_to_shopping_cart" method="POST">
+  <input type="hidden" name="productid" id="productid"/>
+  <table>
+  <tr><td>
+    Choose how many <%= @selectedProduct.name %> you would like to order:
+  </td>
+  <td> <input type="text" name="amount" id="amount"/></td>
+  </tr>
+  <tr><td>
+    Comments:
+  </td>
+  <td><textarea rows="3" cols="20" name="comments" id="comments"/><br/></td></tr>
+  </table>
+</form>
+
+Add to shopping cart:<a href="#" onclick="javascript:submitAddToShoppingCart();"> <img src="/images/cart.gif"/> </a>
+</div>
+<div id="gallery">
+  <div id="controls"/>
+  <div id="slideshow"/>
+  <div id="details" class="embox">
+	<div id="download" class="download"></div>
+	<div id="image-title" class="image-title"></div>
+	<div id="image-desc" class="image-desc"></div>
+  </div>
+</div>
+
+<div id="login_or_signup" align="center" class="flora">
+
+</div>
+
+</div>

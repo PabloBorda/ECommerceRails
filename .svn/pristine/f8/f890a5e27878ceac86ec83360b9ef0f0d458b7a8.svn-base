@@ -1,0 +1,19 @@
+  <script>
+  
+  function clickedOnNewUser(){
+    $("#sup").trigger("click");
+    $("#login_or_signup").dialog("destroy");
+  }
+
+  function clickedOnLogIn(){
+    $("#in").trigger("click");
+    $("#login_or_signup").dialog("destroy");
+  }
+    
+    
+  </script>
+
+  Sign up if new user, or login<br/>
+  <input type="button" value="New User" onclick="javascript:clickedOnNewUser();"/><br/>
+  <input type="button" value="Log In" onclick="javascript:clickedOnLogIn();"/>
+  

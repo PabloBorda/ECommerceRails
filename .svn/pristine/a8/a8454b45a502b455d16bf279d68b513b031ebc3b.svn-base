@@ -1,0 +1,300 @@
+  [4;36;1mSQL (0.021000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.013000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m
+Unable to load creditcard, underlying cause no such file to load -- creditcard 
+
+ C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:101:in `require_or_load'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test/test_helper.rb:35
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:\Users\papito\Documents\NetBeansProjects\51incNew\test\functional\fifty_one_inc_controller_test.rb:1
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:93:in `require_file'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:109:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `each'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:108:in `add_to_suites'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:66:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `loop'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:59:in `parse_args'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:166:in `run_mediator'
+C:/Program Files/NetBeans 6.5 RC2/ruby2/nb_test_mediator.rb:279
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mROLLBACK[0m

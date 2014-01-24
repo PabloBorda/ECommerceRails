@@ -1,0 +1,57 @@
+<div align="right">Welcome 
+<%=  
+if (@usercito != nil)
+  @usercito.name 
+end
+%>
+
+<%= 
+if (@usercito != nil)
+  @usercito.lastname
+end
+%><br/>
+<a href="/backend/logout">Log Out</a></div>
+<div align="center">
+  <h1>51inc Control Center</h1>
+</div></br>
+<div align="left">
+<table>
+  <tr>
+    <td>
+      <A href="/users"> Users </A> <br/>
+      <a href="/backend/show_orders"> Orders</a> <br/>
+      <A href="/productfamilies">Product Families</A><br/>
+      <A href="/products">Products</A><br/>
+      <A href="/backend/set_merchant_account">Set Merchant Account Data</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    </td>
+    <td>
+      
+    </td>
+</tr>
+  <tr>
+    <td>
+      
+    </td>
+    <td>
+      
+    </td>
+
+  </tr>
+
+  <tr align="center">
+    <TD></TD>
+    <td></td>
+
+  </tr>
+
+</table>
+</div>

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+
+<!--   ====================================     CSS Styles     =========================================== -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/droppy.css" />
+  <link rel="stylesheet" href="/stylesheets/ui.datepicker.css" type="text/css"/>
+  <link rel="stylesheet" href="/stylesheets/flora/flora.all.css" type="text/css" media="screen" title="Flora (Default)"/>
+  <link rel="stylesheet" href="/stylesheets/galleria.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="/stylesheets/51colors.css" type="text/css"/>
+<!--   ===================================================================================================== -->
+<!--   ====================================    Needed scripts     ========================================== -->
+  <script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
+  <script type="text/javascript" src="/javascripts/ui.core.js"></script>
+  <script type="text/javascript" src="/javascripts/ui.dialog.js"></script>
+  <script type="text/javascript" src="/javascripts/ui.resizable.js"></script>
+  <script type="text/javascript" src="/javascripts/ui.draggable.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.forms.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.validate.js"></script>
+  <script type="text/javascript" src="/javascripts/ui.datepicker.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.blockUI.js.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.fancybox-1.0.0.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.galleria.js"></script>
+  <script type="text/javascript" src="/javascripts/ddownmenu.js"></script>
+  <script type="text/javascript" src="/javascripts/frontendScripts.js"></script>
+<!--   ===================================================================================================== -->
+</head>
+<title>
+  51 Incorporated E-Commerce
+</title>
+
+<body max-width:800px max-height:600px bgcolor="#c0c0c0">
+
+<div align="center">
+<table width="800" height="600" id="mainTable" bgcolor="white" class="mainTable" style="overflow: scroll;">
+  <tr>
+    <td></td>
+    <td style="background-color: #c0c0c0;"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td valign="top" align="left">
+      <img src="/images/logo-round.jpg"  style="background-color: #c0c0c0"/><br/>
+      Already a customer?<br/>
+      <input type="button" id="in" name="Log In" value="Log In"/><br/>
+      <input type="button" id="sup" name="New Customer" value="New Customer"/>
+     <form id="loadSelectedFamily" action="/fifty_one_inc/load_products" method="POST">
+       <input id="chosenFamily" type="hidden" value="" name="chosenFamily"/>
+     </form>
+
+    </td>
+    <td align="left" valign="top" style="background-image: url(/images/backmenu.jpg); background-repeat: no-repeat;">
+
+      <ul id="jsddm">
+
+        <li><a href="#">ABOUT 51</a></li>
+        <li><a href="#">PRODUCTS</a>
+        <ul>
+          <% families = Productfamily.find(:all) %>
+          <% for pf  in families%>
+              <li id="fam<%=pf.id%>" onclick="loadFamily(<%=pf.id%>);"><a href="#"><font color="#FFFFFF"><%= pf.name %></font></a>
+              <% prod_per_family = Product.find_all_by_productfamily_id(pf.id) %>
+                <% for pr in prod_per_family                                     %>
+                <li id="pr<%=pr.id%>" onclick="loadProduct(<%=pr.id%>,'jsddm');"><a href="#"><font color="#FFFFFF">&nbsp;&nbsp;&nbsp;<%=pr.name%></font></a></li>
+                <% end                                                           %>
+              <% end %>
+
+        </ul>
+        </li>
+        <li><a href="#">SHOPPING CART</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CREDIT/LINKS</a></li>
+      </ul>
+      <br/>
+      <div align="center" id="showProductPics">
+        <div id="status" align="right">
+
+        </div><br/>
+        <div id="showProduct" align="center">
+        </div>
+      </div>
+    </td>
+    <td>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+
+    </td>
+    <td align="center" valign="top">
+
+    </td>
+    <td id="selector">
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+
+    </td>
+    <td id="hola">
+
+    </td>
+
+     <form id="orderFrm" name="order" action="/fifty_one_inc/order_my_product" method="POST">
+       <input id="selectedPic" type="hidden" name="selectedPic" value="0"/>
+     </form>
+
+     <form id="loadSingleProduct" name="loadSingleProduct" action="/fifty_one_inc/load_single_product" method="POST">
+       <input id="selectedProduct" type="hidden" name="selectedProduct" value="0"/>
+     </form>
+
+
+    <div id="pics" align="center" style="overflow:auto" class="flora">
+
+
+    </div>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+<br />
+</div>
+
+
+
+
+<div align="center" id="supDialog" class="flora" style="position: relative">
+   <h1>Sign Up!</h1>
+
+   <form id="signUpFrm" name="signUpFrm" action="/fifty_one_inc/sign_up" method="POST">
+     <table width="480" height="240">
+      <tr>
+        <td>
+          UserName:
+        </td>
+        <td>
+          <input id="user" type="text" name="user"/>
+        </td>
+        <td>
+         Choose a password:
+        </td>
+        <td>
+          <input id="pass" type="password" name="pass"/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Type password again:
+        </td>
+        <td>
+          <input id="again" type="password" name="passagain"/>
+        </td>
+        <td>
+          First Name:
+        </td>
+        <td>
+          <input id="fname" type="text" name="fname"/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last Name:
+        </td>
+        <td>
+          <input id="lname" type="text" name="lname"/>
+        </td>
+        <td>
+          Gender
+        </td>
+        <td>
+          <select name="gender">
+            <option value ="male">Male</option>
+            <option value ="female">Female</option>
+          </select><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Birth Date:
+        </td>
+        <td>
+          <input name="bdate" id="bdate" class="date_input"/>
+        </td>
+        <td>
+          Country:
+        </td>
+        <td>
+          <input id="country" type="text" name="country"/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          City:
+        </td>
+        <td>
+          <input id="city" type="text" name="city"/>
+        </td>
+        <td>
+          Address:
+        </td>
+        <td>
+          <input id="address" type="text" name="address"/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Zip:
+        </td>
+        <td>
+          <input id="zip" type="text" name="zip"/>
+        </td>
+         <td>
+          Phone:
+        </td>
+        <td>
+          <input id="phone" type="text" name="phone"/><br/>
+          <div align="right"></div>
+        </td>
+      </tr>
+	  <tr>
+        <td>&nbsp;</td>
+        <td colspan="2"><ul id="errorContainer"></ul></td>
+        
+        <td align="right">   <p>
+		
+          <input id="s" type="submit" value="Sign Up"/>
+        </p></td>
+      </tr>
+    </table>
+   </form>
+
+</div>
+
+ <form id="loginFrm" name="loginFrm" action="/fifty_one_inc/customer_login" method="POST">
+       <div id="signUpResponse" align="center">
+         <h1>51inc Customer Log-In</h1><br/>
+         User: <input type="text" name="user"> <br/>
+         Password: <input type="password" name="password"> <br/>
+         <input id="loginBtn" type="button" name="login" value="Log In">
+       </div>
+ </form>
+
+
+</body>

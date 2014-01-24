@@ -1,0 +1,11 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+Thank you for requesting this product
+<% customer = User.find_all_by_id(session[:user].id)                                                               %>
+<% ordered_products = Order_product.find_all_by_orders_id(Order.find_all_by_customer_id_and_confirmed(customer.id,0))  %>
+<% for p in ordered_products          %>
+<%=  p.name  %><br/>
+<% end  %>

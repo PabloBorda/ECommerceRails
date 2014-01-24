@@ -1,0 +1,18 @@
+
+  
+          <% prods = Product.find_all_by_productfamily_id(@familyToLoad)                 %>
+          <% counter = 0                                                                 %>
+          <% for product in prods                                                        %>
+          <%   if product.pictures != nil && !product.pictures.empty?                    %>
+          <%     picture_for_this_product = product.pictures[0]                          %>
+          <%     if picture_for_this_product != nil                                      %>
+                   <IMG id="<%=counter%>" src="<%=picture_for_this_product.url%>" onclick="loadProduct(<%=counter%>,'pics');" width="96" height="96"/><br/>
+	            <%=h product.name %>
+          <%     else                                                                    %>
+                   No picture for <%= product.name %>
+          <%     end                                                                     %>
+          <%   end                                                                       %>     
+          <br/><br/><br/>
+          <% counter = counter + 1 %>
+        <% end %>
+  

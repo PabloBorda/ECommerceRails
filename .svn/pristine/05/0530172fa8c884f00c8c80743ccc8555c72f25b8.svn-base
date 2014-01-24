@@ -1,0 +1,20 @@
+<h1>Editing productfamily</h1>
+<br/><%= link_to "Backend home", :controller=>"backend", :action => "get_me_in" %><br/>
+<% form_for(@productfamily) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @productfamily %> |
+<%= link_to 'Back', productfamilies_path %>

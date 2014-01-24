@@ -1,0 +1,123 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+
+<table border="1">
+<tbody bgcolor="yellow">
+  <tr>
+  <td>
+    <b>User ID</b>
+  </td>
+  <td>
+    <b>Name</b>
+  </td>
+  <td>
+    <b>Last Name</b>
+  </td>
+  <td>
+    <b>Address</b>
+  </td>
+  <td>
+    <b>Zip</b>
+  </td>
+  <td>
+    <b>City</b>
+  </td>
+  <td>
+    <b>Country</b>
+  </td>
+  <td>
+    <b>Email</b>
+  </td>
+  <td>
+    <b>Phone</b>
+  </td>
+  <td>
+    <b>Order Date</b>
+  </td>
+  <td>
+    <b>Ordered Products</b>
+  </td>
+</tr>
+
+</tbody>
+<% for o in @orders                                                 %>
+  <% if !o.confirmed                                                %>
+    <%  @usr = User.find_by_id(o.customer_id)                       %>
+    <%  @order_products = Order_product.find_all_by_orders_id(o.id) %>
+    <%  @ordered_products_ids = []                                  %>
+    <%  @prod_amounts = []                                          %>
+    <%  for op in @order_products                                   %>
+    <%    @ordered_products_ids.push(op.product_id)                 %>
+    <%    @prod_amounts.push(op.amount)                             %>
+    <%  end                                                         %>
+    <%  @ordered_products = Product.find(@ordered_products_ids)     %>
+<tr>
+  <td>
+    <%=   @usr.id %>
+  </td>
+  <td>
+    <%=   @usr.name %>
+  </td>
+  <td>
+    <%=   @usr.lastname %>
+  </td>
+  <td>
+    <%=   @usr.address %>
+  </td>
+  <td>
+    <%=   @usr.zip %>
+  </td>
+  <td>
+    <%=   @usr.city %>
+  </td>
+  <td>
+    <%=   @usr.country %>
+  </td>
+  <td>
+    <%=   @usr.email %>
+  </td>
+  <td>
+    <%=   @usr.phone %>
+  </td>
+  <td>
+    <%= o.orderdate %>   
+  </td>
+  <td>
+   <table bgcolor="#C0C0C0">
+     <tbody>
+       <td><b>Product Name</b></td>
+       <td><b>Stock</b></td>
+       <td><b>Amount</b></td>
+       <td><b>Total</b></td>
+
+     </tbody>
+     <tr>
+       <% @total = 0 %>
+       <% @count = 0 %>
+       <% for orpr in @ordered_products %>
+         <% @total = @total + orpr.price %>
+         <td>
+           <%= orpr.name %>
+         </td>
+         <td>
+           <%= orpr.stock %>
+         </td>
+         <td>
+           <%= @prod_amounts[@count] %>
+         </td>
+         <td>
+           <%= (orpr.price * @prod_amounts[@count]) %>
+           <% @count = @count + 1      %>
+         </td>
+       <%end%>
+     </tr>
+   </table>
+  </td>
+</tr>
+<%end%>
+<%end%>
+
+</table>
